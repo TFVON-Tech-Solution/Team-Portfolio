@@ -9,10 +9,12 @@ const Home = () => {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <h1 className="text-[50px] text-white font-bold">
-        Welcome to TFVON Tech Solution
+        Welcome to TFVON Tech Solution 
       </h1>
+      <p>A Dynamic Wev Dev</p>
     </section>
   );
 };
 
 export default Home;
+
