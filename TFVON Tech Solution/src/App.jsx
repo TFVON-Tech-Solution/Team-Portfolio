@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
+import bg from './assets/bg.png';
 import ScrollToTop from './components/scrollToTop';
 import Navbar from './components/navBar';
 import Home from './pages/home';
