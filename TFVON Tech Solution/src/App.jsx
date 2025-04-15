@@ -11,6 +11,8 @@ import Project from './pages/project';
 import Contact from './pages/contact';
 import Footer from './components/footer';
 
+
+
 const ScrollToSection = () => {
   const location = useLocation();
 
