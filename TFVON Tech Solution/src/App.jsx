@@ -11,8 +11,6 @@ import Project from './pages/project';
 import Contact from './pages/contact';
 import Footer from './components/footer';
 
-
-
 const ScrollToSection = () => {
   const location = useLocation();
 
@@ -45,9 +43,8 @@ const HomePage = () => (
     </section>
     <section id="contact" className="contact-section">
       <Contact />
-    </section >
-    <Footer/>
-
+    </section>
+    <Footer />
   </>
 );
 
