@@ -1,6 +1,6 @@
 import React from 'react';
-import htmlImage from '../assets/html.png'; // eto ung gayahin mo vey, htmlImage 
-import javascript from '../assets/java-script.png';
+import htmlImage from '../assets/progLanguage/html.png'; // eto ung gayahin mo vey, htmlImage 
+import javascript from '../assets/progLanguage/java-script.png';
 
 const About = () => {
   return (

@@ -4,14 +4,14 @@ import '../assets/css/team.css';
 import logo from '../assets/logo.png';
 
 
-const images = import.meta.glob('../assets/*.png', { eager: true });
+const images = import.meta.glob('../assets/team/*.png', { eager: true });
 
 const teamMembers = [
   {
     name: 'Marc Andrei Toledo',
     role: 'FRONT-END',
     skills: ['Frameworks', 'React', 'CSS'],
-    image: images['../assets/logo.png'].default,
+    image: images['../assets/team/toledo.png'].default,
     github: 'https://github.com/princeharvey',
     instagram: 'https://instagram.com/princeharvey',
     facebook: 'https://facebook.com/princeharvey',
@@ -20,7 +20,7 @@ const teamMembers = [
     name: 'Reymart Omega',
     role: 'FRONT-END',
     skills: ['Frameworks', 'React', 'CSS'],
-    image: images['../assets/logo.png'].default,
+    image: images['../assets/team/omega.png'].default,
     github: 'https://github.com/princeharvey',
     instagram: 'https://instagram.com/princeharvey',
     facebook: 'https://facebook.com/princeharvey',
@@ -29,7 +29,7 @@ const teamMembers = [
     name: 'Martin Louis Valentino',
     role: 'FRONT-END',
     skills: ['Frameworks', 'React', 'CSS'],
-    image: images['../assets/logo.png'].default,
+    image: images['../assets/team/valentino.png'].default,
     github: 'https://github.com/princeharvey',
     instagram: 'https://instagram.com/princeharvey',
     facebook: 'https://facebook.com/princeharvey',
@@ -38,7 +38,7 @@ const teamMembers = [
     name: 'Alen Fidelis',
     role: 'BACK-END',
     skills: ['Frameworks', 'MySQL', 'PHP'],
-    image: images['../assets/logo.png'].default,
+    image: images['../assets/team/fidelis.png'].default,
     github: 'https://github.com/princeharvey',
     instagram: 'https://instagram.com/princeharvey',
     facebook: 'https://facebook.com/princeharvey',
@@ -47,7 +47,7 @@ const teamMembers = [
     name: 'Prince Harvey Nagtalon',
     role: 'FRONT-END',
     skills: ['Frameworks', 'React', 'CSS'],
-    image: images['../assets/logo.png'].default,
+    image: images['../assets/team/nagtalon.png'].default,
     github: 'https://github.com/princeharvey',
     instagram: 'https://instagram.com/princeharvey',
     facebook: 'https://facebook.com/princeharvey',
@@ -58,7 +58,10 @@ const Team = () => {
   return (
     <section className="team-section">
       <div className="team-header">
-        <h2 className="team-title">Our Developer Team</h2>
+        <div className="team-title-group">
+          <h1 className="team-title">Our Developer Team </h1>
+          <h4 className="team-subtitle">"Turning Coffee Into Code and Vision Into Reality"</h4>
+        </div>
         <img src={logo} alt="Logo" className="team-logo" />
       </div>
       <div className="team-grid">

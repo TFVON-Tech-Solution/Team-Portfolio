@@ -13,21 +13,44 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  /* Ensure it takes full viewport height */
   position: relative;
+}
+
+.team-grid {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  margin-bottom: 4rem;
 }
 
 .team-header {
   display: flex;
   justify-content: space-between;
-  margin-right: 60px;
-  margin-top: -2vh;
+  margin-right: 53px;
+  /* margin-top: -2vh; */
+}
+
+.team-title-group {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-title {
+  margin: 0;
+}
+
+.team-subtitle {
+  margin-top: 10px;
+  font-weight: 200;
+  font-style: italic;
+  color: #c9c9c9;
 }
 
 .team-logo {
-  height: 125px;
+  height: 170px;
   padding-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 
@@ -36,20 +59,12 @@
   font-weight: bold;
   text-align: left;
   margin-left: 20px;
-  margin-top: 23px;
-}
-
-
-.team-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+  margin-top: 30px;
 }
 
 .team-card {
-  width: 215px;
-  height: 370px;
+  width: 270px;
+  height: 430px;
   background-color: #1f2937;
   border: 1.5px solid #22d3ee;
   border-radius: 20px;
@@ -58,6 +73,11 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
 }
 
 .team-avatar {
@@ -65,19 +85,19 @@
   height: 120px;
   border-radius: 9999px;
   object-fit: cover;
-  margin-bottom: 1.3rem;
-  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
   background-color: #222222;
 }
 
 .team-name {
-  font-size: 13.5px;
+  font-size: 19px;
   font-weight: bolder;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .team-role {
-  font-size: 11px;
+  font-size: 13.2px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -91,7 +111,7 @@
 }
 
 .team-skills {
-  font-size: 10px;
+  font-size: 12px;
   list-style: none;
   padding: 0;
   margin-bottom: 1rem;
@@ -120,10 +140,12 @@
 .team-icons svg {
   transition: color 0.3s;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .team-icons svg:hover {
   color: #22d3ee;
+  transform: scale(1.25);
 }
 
 
@@ -143,7 +165,7 @@
 
 .footer-base {
   width: 70%;
-  height: 85px;
+  height: 88px;
   background: linear-gradient(to right, #656565, #969696);
   border-top-right-radius: 20px;
 }
@@ -154,7 +176,7 @@
   right: 0;
   margin-right: 90px;
   width: 85%;
-  height: 47px;
+  height: 50px;
   background: linear-gradient(to right, #c9c3c3, #e6e2e2);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
