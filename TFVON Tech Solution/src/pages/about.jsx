@@ -1,4 +1,6 @@
 import React from 'react';
+import htmlImage from '../assets/html.png'; // eto ung gayahin mo vey, htmlImage 
+import javascript from '../assets/java-script.png';
 
 const About = () => {
   return (
@@ -14,6 +16,9 @@ const About = () => {
   <div className="lg:w-1/2 w-full text-left list-none">
     
   <h2 className="text-2xl font-bold mb-6">Team Background</h2>
+
+  <img src={htmlImage} alt="TFVON Logo" className="h-[55px]" />  {/* eto import image ung htmlImage sa import yan ang nilagay ko kaya gaagwion mo papaliotan moyun dipende sa image  */}
+  <img src={javascript} alt="TFVON Logo" className="h-[55px]" /> {/* eto next example */}
 
 <div className="space-y-5 pl-4 text-justify">
   <p>
