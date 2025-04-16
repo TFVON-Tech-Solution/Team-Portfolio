@@ -33,7 +33,7 @@ const Home = () => {
             onClick={() => scrollToSection('team')}
             className="w-[130px] h-[48px] bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-full transition duration-300"
           >
-            Teams
+            Team
           </button>
         </div>
       </div>

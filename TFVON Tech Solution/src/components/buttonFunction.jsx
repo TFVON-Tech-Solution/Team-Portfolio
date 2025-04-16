@@ -1,4 +1,3 @@
-// src/utils/buttonFunction.js or wherever you'd like to place it
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
