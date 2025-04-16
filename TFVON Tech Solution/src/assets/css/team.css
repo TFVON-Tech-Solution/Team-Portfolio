@@ -64,7 +64,7 @@
 
 .team-card {
   width: 270px;
-  height: 430px;
+  height: 440px;
   background-color: #1f2937;
   border: 1.5px solid #22d3ee;
   border-radius: 20px;
@@ -81,8 +81,8 @@
 }
 
 .team-avatar {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 9999px;
   object-fit: cover;
   margin-bottom: 1.5rem;
