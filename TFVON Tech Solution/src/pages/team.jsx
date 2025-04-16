@@ -14,7 +14,10 @@ const Team = () => {
         </div>
         <img src={logo} alt="Logo" className="team-logo" />
       </div>
+
+      {/* TEAMCARD */}
       <TeamCard />
+
       <div className="layered-footer">
         <div className="footer-base"></div>
         <div className="footer-top"></div>

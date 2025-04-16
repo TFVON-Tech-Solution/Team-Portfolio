@@ -1,5 +1,4 @@
-// src/teamData.js or wherever you're placing it
-
+//TEAM DATA
 const images = import.meta.glob('../assets/team/*.png', { eager: true });
 
 const teamMembers = [
@@ -32,8 +31,8 @@ const teamMembers = [
   },
   {
     name: 'Alen Fidelis',
-    role: 'BACK-END',
-    skills: ['Frameworks', 'MySQL', 'PHP'],
+    role: 'BACK-END & FRONT-END',
+    skills: ['Frameworks', 'MySQL', 'PHP', 'React JS', 'CSS', 'Java', 'Javasript'],
     image: images['../assets/team/fidelis.png'].default,
     github: 'https://github.com/Yrria',
     instagram: 'https://instagram.com/princeharvey',
