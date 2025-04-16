@@ -127,7 +127,7 @@ const Contact = () => {
           </form>
 
           {/* Social Links */}
-          <div className="space-y-6 animate-slide-left" style={{ marginTop: "120px" }}>
+          <div className="space-y-6 animate-slide-left" style={{ marginTop: "125px", marginLeft: "200px" }}>
             <ul className="space-y-6">
               {[
                 {
@@ -153,7 +153,7 @@ const Contact = () => {
               ].map((link, i) => (
                 <li
                   key={i}
-                  className="flex items-center transition-transform hover:scale-105 pulse-social"
+                  className="flex items-center transition-transform hover:scale-105 pulse-social gap-5"
                   style={{ marginBottom: "20px" }}
                 >
                   <img
