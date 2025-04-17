@@ -4,12 +4,98 @@
 /* --- Responsive for Mobile --- */ 
 @media (max-width: 768px) {
 
-  /* .team-logo {
-    height: 120px;
-    margin-bottom: -6px;
-  } */
+
+  .contact-us {
+    font-size: 2rem;
+    margin-bottom: 3vh;
+  }
+
+  .contact-text {
+    font-size: 13px;
+    margin: 0 25px;
+  }
+
+  .line {
+    width: 480px;
+  }
+
+  label {
+    font-size: 12.5px;
+  }
+
+  input {
+    height: 38px;
+    width: 100%;
+   
+  }
+
+  .place-text {
+    font-size: 12.5px;
+  }
+
+  button {
+    height: 18px;
+    width: 30px;
+    margin-top: 1vh;
+  }
+
+  .contact-text-field {
+    margin: 0 25px;
+
+  }
+
+
+  .link-in {
+    margin-left: 0;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    /* gap: 10px; */
+    padding-left: 0;
+    margin-left: 30px;
+
+  }
+
+  .social-links img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-links li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .social-links li span {
+    display: none; /* optional: hide the bullet */
+  }
+
+  .social-links a {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* spacing between form and social links */
+  }
+
+  .social-links {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
 
 }
+
 
 /* NOTE: ung media query ang purpose nyan ay kapag ung size ng screen ay nag adjust na sa naka lagay sa query EX. (max-width: 768px)...
        ang mangyayari ang style na na baabsahin nya ay ung na sa loob ng @media (max-width: 768px) { }

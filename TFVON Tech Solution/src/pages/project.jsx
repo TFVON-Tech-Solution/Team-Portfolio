@@ -23,11 +23,11 @@ const Project = () => {
       style={{ background: 'linear-gradient(to bottom right,rgb(37, 37, 37),rgb(41, 41, 41))' }}
       className="text-white min-h-screen py-[100px] px-5 flex flex-col items-center justify-center"
     >
-      <h1 className="text-[50px] font-bold mb-10">
-        <span className="text-white">TEAM</span> <span className="text-cyan-400">PROJECT</span>
+      <h1 className="team-project text-[50px] font-bold mb-10">
+        <span className=" text-white">TEAM</span> <span className="text-cyan-400">PROJECT</span>
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="project-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {images.map((item, index) => (
           <div key={index} className="flex items-center justify-center relative group">
           {/* Image */}

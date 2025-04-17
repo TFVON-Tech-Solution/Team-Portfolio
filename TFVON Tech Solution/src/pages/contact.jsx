@@ -16,28 +16,30 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-gradient-to-b from-gray-900 to-[#323846] text-white py-[40px] px-[20px] animate-fade-in"
+      className="pagesetting min-h-screen bg-gradient-to-b from-gray-900 to-[#323846] text-white py-[40px] px-[20px] animate-fade-in"
       style={{
         marginTop: 0,
+        paddingBottom: 20,
         paddingTop: 90,
+        
       }}
     >
       {/* Top Header */}
       <div className="text-center mb-2 animate-slide-down">
-        <h1 className="text-[60px] font-bold relative inline-block glowing-header">
+        <h1 className="contact-us text-[60px] font-bold relative inline-block glowing-header">
           CONTACT US
         </h1>
-        <p className="text-lg text-gray-300 mt-4 animate-fade-in-slow">
+        <p className="contact-text text-lg text-gray-300 mt-4 animate-fade-in-slow">
           Let’s talk! Whether you have a question or just want to say hi, we’ll try our best to get back to you.
         </p>
-        <span className="block w-[1020px] h-1 bg-white mx-auto mt-4 rounded-full animate-grow-line  inline-block"></span>
+        <span className="line block w-[1020px] h-1 bg-white mx-auto mt-4 rounded-full animate-grow-line  inline-block"></span>
       </div>
 
       {/* Centered Content */}
       <div className="mt-6 flex justify-center animate-fade-in-slow">
-        <div className="w-full max-w-7xl grid grid-cols-2 gap-8">
+        <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6 animate-slide-right" style={{ marginTop: "95px" }}>
+          <form onSubmit={handleSubmit} className="contact-text-field space-y-6 animate-slide-right" style={{ marginTop: "95px" }}>
             <div className="grid grid-cols-2 gap-8">
               <div className="transition-transform hover:scale-105">
                 <label htmlFor="firstName" className="block text-gray-200 mb-2">First Name</label>
@@ -48,7 +50,7 @@ const Contact = () => {
                   name="firstName"
                   placeholder="Enter your first name"
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400/60 text-gray-900 mb-4 glow-input placeholder-black-500"
-                  style={{ fontSize: "18px", padding: "10px", backgroundColor: "#D9D9D9" }}
+                  style={{ fontSize: "14px", padding: "10px", backgroundColor: "#D9D9D9" }}
                 />
               </div>
               <div className="transition-transform hover:scale-105">
@@ -60,7 +62,7 @@ const Contact = () => {
                   name="lastName"
                   placeholder="Enter your last name"
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400/60 text-gray-900 mb-4 glow-input placeholder-black-500"
-                  style={{ fontSize: "18px", padding: "10px", backgroundColor: "#D9D9D9" }}
+                  style={{ fontSize: "14px", padding: "10px", backgroundColor: "#D9D9D9" }}
                 />
               </div>
             </div>
@@ -74,8 +76,8 @@ const Contact = () => {
                   id="mobileNumber"
                   name="mobileNumber"
                   placeholder="Enter your mobile number"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400/60 text-gray-900 mb-4 glow-input placeholder-black-500"
-                  style={{ fontSize: "18px", padding: "15px", backgroundColor: "#D9D9D9" }}
+                  className="place-text w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400/60 text-gray-900 mb-4 glow-input placeholder-black-500"
+                  style={{ fontSize: "14px", padding: "14px", backgroundColor: "#D9D9D9" }}
                 />
               </div>
               <div className="transition-transform hover:scale-105">
@@ -87,7 +89,7 @@ const Contact = () => {
                   name="email"
                   placeholder="Enter your email address"
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400/60 text-gray-900 mb-4 glow-input placeholder-black-500"
-                  style={{ fontSize: "18px", padding: "10px", backgroundColor: "#D9D9D9" }}
+                  style={{ fontSize: "14px", padding: "10px", backgroundColor: "#D9D9D9" }}
                 />
               </div>
             </div>
@@ -100,7 +102,7 @@ const Contact = () => {
                 name="message"
                 placeholder="Write your message here"
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400/60 text-gray-900 min-h-32 resize-y mb-4 glow-input placeholder-black-500"
-                style={{ fontSize: "18px", padding: "10px", backgroundColor: "#D9D9D9" }}
+                style={{ fontSize: "14px", padding: "10px", backgroundColor: "#D9D9D9" }}
               />
             </div>
 
@@ -128,7 +130,7 @@ const Contact = () => {
           </form>
 
           {/* Social Links */}
-          <div className="space-y-6 animate-slide-left" style={{ marginTop: "125px", marginLeft: "100px"}}>
+          <div className="link-in social-links space-y-6 animate-slide-left" style={{ marginTop: "125px", marginLeft: "100px"}}>
             <ul className="space-y-6">
               {[
                 {
