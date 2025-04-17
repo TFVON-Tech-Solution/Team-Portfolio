@@ -127,7 +127,7 @@ const Contact = () => {
           </form>
 
           {/* Social Links */}
-          <div className="space-y-6 animate-slide-left" style={{ marginTop: "125px", marginLeft: "200px" }}>
+          <div className="space-y-6 animate-slide-left" style={{ marginTop: "125px", marginLeft: "100px"}}>
             <ul className="space-y-6">
               {[
                 {
