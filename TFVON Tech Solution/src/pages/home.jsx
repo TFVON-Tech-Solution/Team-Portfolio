@@ -50,7 +50,7 @@ const Home = () => {
           <br />
 
           {/* Responsive Button Section */}
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-end items-center">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-end items-center button-wrapper">
             <button
               onClick={() => scrollToSection('project')}
               className="w-[130px] h-[48px] bg-cyan-400 hover:bg-cyan-500 text-white font-semibold rounded-full transition duration-300"
