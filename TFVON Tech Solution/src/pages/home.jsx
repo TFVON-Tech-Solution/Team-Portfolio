@@ -1,5 +1,6 @@
 import React from 'react';
 import bg from '../assets/bg.png';
+import '../assets/css/home.css';
 import logo from '../assets/logo.png';
 import useScrollButtonFunction from '../components/buttonFunction'; // import the hook
 

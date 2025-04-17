@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/about.css';
 import htmlImage from '../assets/progLanguage/html.png'; // eto ung gayahin mo vey, htmlImage 
 import javascript from '../assets/progLanguage/java-script.png';
 

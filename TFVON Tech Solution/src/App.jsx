@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './assets/css/index.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import bg from './assets/bg.png';

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/project.css';
 import alumniSystem from '../assets/projects/alumniSystem.png';
 import payrollSystem from '../assets/projects/payrollSystem.png';
 import gvTechHRIS from '../assets/projects/GV TECH HRIS .png';

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../assets/css/contact.css';
 import { FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
