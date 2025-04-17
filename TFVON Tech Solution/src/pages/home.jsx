@@ -39,7 +39,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-end text-center md:text-right px-4 md:px-12">
-          <h1 className="text-[30px] md:text-[48px] font-extrabold text-white leading-tight mb-6">
+          <h1 className="intro-page text-[30px] md:text-[48px] font-extrabold text-white leading-tight mb-6">
             Innovating Today,<br />Empowering Tomorrow's Tech
           </h1><br />
           <p className="text-white mb-8 text-base md:text-[18px] font-medium leading-relaxed">
@@ -74,14 +74,14 @@ const Home = () => {
       <section>
         <div className="min-h-screen bg-gradient-to-r from-cyan-500 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-5 md:p-8">
           <div className="text-center mb-10 md:mb-12">
-            <h1 className="text-white text-lg md:text-2xl font-bold">Hi We are</h1>
+            <h1 className="hi-h1 text-white text-lg md:text-2xl font-bold">Hi We are</h1>
             <h2 className="text-white text-3xl md:text-4xl font-extrabold">TFVON TECH SOLUTIONS</h2>
             <p className="text-white text-sm md:text-lg font-semibold">
               A Dynamic <span className="text-cyan-400">{displayText}</span>
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="dynamic  flex flex-wrap justify-center gap-6">
             {[ 
               { title: "INTRODUCTION", text: "Our mission is to provide scalable, secure, and customer-centric technology solutions that drive success, foster innovation, and create value for our clients through excellence and ethical practices." },
               { title: "MISSION", text: "Our mission is to provide scalable, secure, and customer-centric technology solutions that drive success, foster innovation, and create value for our clients through excellence and ethical practices." },

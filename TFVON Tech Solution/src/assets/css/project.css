@@ -10,12 +10,13 @@
 
   .team-project {
     font-size: 2rem;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 45px;
   }
 
   .project-card {
     margin: 10px;
+    padding-bottom: 15px;
   }
 
 }

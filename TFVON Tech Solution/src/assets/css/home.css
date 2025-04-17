@@ -4,11 +4,18 @@
 /* --- Responsive for Mobile --- */ 
 @media (max-width: 768px) {
 
-  /* .team-logo {
-    height: 120px;
-    margin-bottom: -6px;
-  } */
+  .intro-page {
+    padding-top: 40px;
+  }
 
+  .hi-h1 {
+    padding-top: 30px;
+  }
+
+  .dynamic {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 /* NOTE: ung media query ang purpose nyan ay kapag ung size ng screen ay nag adjust na sa naka lagay sa query EX. (max-width: 768px)...
