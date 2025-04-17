@@ -1,20 +1,69 @@
-/* Desktop/Laptop mode */
-
-
-/* --- Responsive for Mobile --- */ 
-@media (max-width: 768px) {
-
-    /* .team-logo {
-      height: 120px;
-      margin-bottom: -6px;
-    } */
-
+/* Desktop & Base Styling */
+.section {
+  margin-bottom: 40px;
 }
 
-/* NOTE: ung media query ang purpose nyan ay kapag ung size ng screen ay nag adjust na sa naka lagay sa query EX. (max-width: 768px)...
-         ang mangyayari ang style na na baabsahin nya ay ung na sa loob ng @media (max-width: 768px) { }
-         kaya pag mag adjust ng size dito dipende sa mobile maaayos rin sya dipende sa tyle na ilaalgay nyo dito 
-         check nyo code ko sa team.css sa media query ko sa baba pag naka mobile na un na ang binabasa nya hindi na ung code sa taas
-         pero ang mababago lang naman jan ay kung ano ang mga ilaalgay mo sa loob ng media query ung mga di mo ilaalgay jan same style 
-         parin.s
-*/
+.teamBg,
+.area {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.intro,
+.fend {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* Icon column hover effect */
+.icon-col img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-col img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .icon-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .icon-col img {
+    height: 60px;
+  }
+
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-justify {
+    text-align: left;
+  }
+
+  .teamBg,
+  .area {
+    font-size: 22px;
+  }
+}
+
+.prog-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  gap: 2.5rem; /* gap-10 equivalent */
+}

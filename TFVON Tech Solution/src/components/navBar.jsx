@@ -48,8 +48,8 @@ const Navbar = () => {
     <header className={`header ${activeSection === 'home' ? 'transparent' : ''}`}>
       <div className="nav-container">
       <a href="/" className="logo" onClick={(e) => handleScroll(e, 'home')}>
-          <img src={logo} alt="Logo" style={{ height: '40px' }} />
-          <span>TFVON TECH SOLUTIONS</span>
+          <img className="imagelogo" src={logo} alt="Logo" style={{ height: '40px' }} />
+          <span className="navtitle">TFVON TECH SOLUTIONS</span>
         </a>
 
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
