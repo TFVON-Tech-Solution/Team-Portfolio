@@ -6,6 +6,7 @@ import php from '../assets/progLanguage/php.png';
 import prog from '../assets/progLanguage/programming.png';
 import css from '../assets/progLanguage/css.png';
 import bullet from '../assets/components/bullet.png';
+import { motion } from 'framer-motion';  // Import framer-motion
 
 const About = () => {
   return (
@@ -61,15 +62,44 @@ const About = () => {
           </div>
         </div>
 
-        {/* Right Column for Icons */}
+        {/* Right Column for Icons with Animation */}
         <div className="prog-icons md:w-1/3 flex flex-wrap items-center justify-center md:items-center md:justify-center gap-10">
-          <img src={prog} alt="Programming Icon" className="w-20 md:w-24 object-contain" />
-          <img src={htmlImage} alt="HTML Icon" className="w-20 md:w-24 object-contain" />
-          <img src={css} alt="CSS Icon" className="w-20 md:w-24 object-contain" />
-          <img src={php} alt="PHP Icon" className="w-20 md:w-24 object-contain" />
-          <img src={javascript} alt="JavaScript Icon" className="w-20 md:w-24 object-contain" />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            src={prog}
+            alt="Programming Icon"
+            className="w-20 md:w-24 object-contain"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            src={htmlImage}
+            alt="HTML Icon"
+            className="w-20 md:w-24 object-contain"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            src={css}
+            alt="CSS Icon"
+            className="w-20 md:w-24 object-contain"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            src={php}
+            alt="PHP Icon"
+            className="w-20 md:w-24 object-contain"
+          />
+          <motion.img
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            src={javascript}
+            alt="JavaScript Icon"
+            className="w-20 md:w-24 object-contain"
+          />
         </div>
-
       </div>
     </section>
   );
