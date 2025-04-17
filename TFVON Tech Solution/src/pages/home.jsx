@@ -73,7 +73,7 @@ const Home = () => {
 
       <section>
         <div className="min-h-screen bg-gradient-to-r from-cyan-500 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-5 md:p-8">
-          <div className="text-center mb-10 md:mb-12">
+          <div className="title-dynamic text-center mb-10 md:mb-12">
             <h1 className="hi-h1 text-white text-lg md:text-2xl font-bold">Hi We are</h1>
             <h2 className="text-white text-3xl md:text-4xl font-extrabold">TFVON TECH SOLUTIONS</h2>
             <p className="text-white text-sm md:text-lg font-semibold">

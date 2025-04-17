@@ -13,6 +13,10 @@
   gap: 2.5rem;
 }
 
+.page-text {
+  padding-top: 40px;
+}
+
 .teamBg,
 .area {
   font-size: 25px;

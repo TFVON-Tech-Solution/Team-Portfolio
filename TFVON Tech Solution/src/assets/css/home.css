@@ -1,5 +1,10 @@
 /* Desktop/Laptop mode */
 
+.title-dynamic {
+  margin-bottom: 30px;
+  
+}
+
 @media (max-width: 1200px) {
 
   .intro-page {
