@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-cyan-500 text-white py-[100px] px-[20px]"
+      className="about-sec flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-cyan-500 text-white py-[100px] px-[20px]"
     >
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-start gap-10">
         {/* Left Content */}
