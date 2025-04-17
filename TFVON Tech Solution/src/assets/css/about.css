@@ -3,6 +3,17 @@
   margin-bottom: 40px;
 }
 
+.prog-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  gap: 2.5rem;
+  /* gap-10 equivalent */
+}
+
 .teamBg,
 .area {
   font-size: 25px;
