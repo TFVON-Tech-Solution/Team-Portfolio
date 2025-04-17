@@ -1,5 +1,20 @@
 /* Desktop/Laptop mode */
 
+@media (max-width: 1200px) {
+
+  .intro-page {
+    padding-top: 40px;
+  }
+
+  .hi-h1 {
+    padding-top: 30px;
+  }
+
+  .dynamic {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 
 /* --- Responsive for Mobile --- */ 
 @media (max-width: 768px) {

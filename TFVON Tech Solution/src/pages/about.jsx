@@ -14,7 +14,7 @@ const About = () => {
       id="about"
       className="about-sec flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-cyan-500 text-white py-[100px] px-[20px]"
     >
-      <div className="w-full max-w-6xl flex flex-col md:flex-row items-start gap-10">
+      <div className="whole-about w-full max-w-6xl flex flex-col md:flex-row items-start gap-10">
         {/* Left Content */}
         <div className="page-text p-8 md:p-12 md:w-2/3 space-y-6">
           <h1 className="section text-4xl font-extrabold text-white flex items-center gap-2">
