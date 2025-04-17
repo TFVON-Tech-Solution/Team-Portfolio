@@ -15,12 +15,12 @@ const About = () => {
     >
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-start gap-10">
         {/* Left Content */}
-        <div className="p-8 md:p-12 md:w-2/3 space-y-6">
+        <div className="page-text p-8 md:p-12 md:w-2/3 space-y-6">
           <h1 className="section text-4xl font-extrabold text-white flex items-center gap-2">
             <span className="text-red-500 text-5xl">
-              <img src={bullet} alt="Bullet Icon" className="h-10 md:h-10" />
+              <img src={bullet} alt="Bullet Icon" className="bullet h-10 md:h-10" />
             </span>
-            <span className="text-[50px]">ABOUT US</span>
+            <span className="about-text text-[50px]">ABOUT US</span>
           </h1>
 
           <div className="space-y-4 text-justify">
@@ -44,14 +44,14 @@ const About = () => {
             <div>
               <h2 className="area font-bold text-[25px]">Focus Area</h2>
               <div className="fend mt-2">
-                <h3 className="font-semibold text-lg">Front-End</h3>
+                <h3 className="type-skill font-semibold text-lg">Front-End</h3>
                 <p>
                   &nbsp;&nbsp;With the use of HTML as structure and CSS for designing, our team focuses more on designing the page
                   using creative and user-friendly interfaces.
                 </p>
               </div>
-              <div className="mt-3">
-                <h3 className="font-semibold text-lg">Back-End</h3>
+              <div className="fend mt-3">
+                <h3 className="type-skill font-semibold text-lg">Back-End</h3>
                 <p>
                   &nbsp;&nbsp;We also handle the behind-the-scenes processes using backend tools like PHP and MySQL to store and
                   manage data effectively.
