@@ -1,0 +1,20 @@
+/* Desktop/Laptop mode */
+
+
+/* --- Responsive for Mobile --- */ 
+@media (max-width: 768px) {
+
+    /* .team-logo {
+      height: 120px;
+      margin-bottom: -6px;
+    } */
+
+}
+
+/* NOTE: ung media query ang purpose nyan ay kapag ung size ng screen ay nag adjust na sa naka lagay sa query EX. (max-width: 768px)...
+         ang mangyayari ang style na na baabsahin nya ay ung na sa loob ng @media (max-width: 768px) { }
+         kaya pag mag adjust ng size dito dipende sa mobile maaayos rin sya dipende sa tyle na ilaalgay nyo dito 
+         check nyo code ko sa team.css sa media query ko sa baba pag naka mobile na un na ang binabasa nya hindi na ung code sa taas
+         pero ang mababago lang naman jan ay kung ano ang mga ilaalgay mo sa loob ng media query ung mga di mo ilaalgay jan same style 
+         parin.s
+*/
