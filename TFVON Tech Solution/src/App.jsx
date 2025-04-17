@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
-import './assets/css/index.css';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-import bg from './assets/bg.png';
-import ScrollToTop from './components/scrollToTop';
+import './assets/css/index.css';
+
 import Navbar from './components/navBar';
+import Footer from './components/footer';
+import ScrollToTop from './components/scrollToTop';
+
 import Home from './pages/home';
 import About from './pages/about';
 import Team from './pages/team';
 import Project from './pages/project';
 import Contact from './pages/contact';
-import Footer from './components/footer';
 
 const ScrollToSection = () => {
   const location = useLocation();
@@ -51,7 +52,7 @@ const HomePage = () => (
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <ScrollToTop />
       <ScrollToSection />
@@ -64,7 +65,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-    </Router>
+    </>
   );
 };
 
