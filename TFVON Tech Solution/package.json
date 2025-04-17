@@ -5,8 +5,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postbuild": "cp dist/index.html dist/404.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && npm run postbuild && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
