@@ -1,5 +1,14 @@
 /* Desktop/Laptop mode */
 
+button {
+  height: 40px;
+}
+
+.card-text {
+  padding: 15px;
+}
+
+
 .title-dynamic {
   margin-bottom: 30px;
   
@@ -19,10 +28,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-}
-
-button {
-  height: 40px;
 }
 
 /* --- Responsive for Mobile --- */ 

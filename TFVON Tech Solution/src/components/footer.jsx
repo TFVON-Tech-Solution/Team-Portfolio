@@ -14,14 +14,24 @@ const Footer = () => {
 
         {/* Contact Information */}
         <div className="contacts text-center">
-          
+
           <div className="flex justify-center gap-6">
-            <p className="phone text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
-              Phone: +63 095 358 4418
-            </p>
-            <p className="email text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
-              Email: tfvontechsolution@gmail.com
-            </p>
+            <div className="flex gap-2">
+              <p className="phone text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
+                Phone:
+              </p>
+              <p className="phone text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
+                +63 095 358 4418
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <p className="email text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
+                Email:
+              </p>
+              <p className="email text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
+                tfvontechsolution@gmail.com
+              </p>
+            </div>
           </div>
         </div>
       </div>

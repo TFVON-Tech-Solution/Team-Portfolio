@@ -8,22 +8,6 @@ body, html {
   overflow-x: hidden;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  z-index: 100;
-  background: #212121;
-  color: white;
-  transition: background 0.3s ease-in-out;
-}
-
-.header.transparent {
-  background: rgba(33, 33, 33, 0.58);
-}
-
 /* Background gradient behind header */
 .header::before {
   content: '';
@@ -32,28 +16,11 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-
   z-index: -1;
 }
 
 .nav-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 3%;
-}
-
-/* Logo area */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
 }
 
 /* Navbar links */
@@ -72,44 +39,20 @@ body, html {
   transition: color 0.3s ease;
 }
 
+/* Remove underline (no ::before at all) */
 .navBar a::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  /* background: white; */
-  width: 0;
-  transition: width 0.3s ease;
+  display: none;
 }
 
-.navBar a:hover::before {
-  width: 100%;
-}
-
-.navBar a.active {
-  font-weight: bold;
+/* Hover effect: only color */
+.navBar a:hover {
   color: #22d3ee;
 }
 
-.navBar a.active::before {
-  width: 100%;
-}
-
-/* Hamburger styles */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
-  z-index: 101;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  transition: 0.3s;
+/* Active effect: bold and color only */
+.navBar a.active {
+  font-weight: bold;
+  color: #22d3ee;
 }
 
 /* Mobile styles */
@@ -134,27 +77,21 @@ body, html {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, background 0.3s ease-in-out;
-    /* margin-top: -15px; */
-    background: transparent; /* default transparent to avoid flash */
+    background: transparent;
   }
 
-  /* Default background when open */
   .navBar.open {
     max-height: 300px;
     padding: 10px 0;
-    /* margin-top: -15px; */
     background: #212121;
   }
 
-  /* If home section, make background transparent */
   .navBar.open.transparent {
     background: rgba(33, 33, 33, 0.85);
-    
   }
 
-  /* Keeps it transparent while closing if it was transparent before */
   .navBar.transparent {
-    background: rgba(33, 33, 33, 8.85 );
+    background: rgba(33, 33, 33, 0.85);
   }
 
   .navBar a {

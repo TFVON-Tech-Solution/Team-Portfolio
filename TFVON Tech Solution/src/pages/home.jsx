@@ -96,7 +96,7 @@ const Home = () => {
                 className="rounded-3xl border-2 border-cyan-400 p-6 md:p-8 w-[90%] md:w-96 min-h-[300px] text-white bg-slate-800 shadow-lg flex flex-col justify-center items-center text-center"
               >
                 <h3 className="font-extrabold text-lg md:text-xl mb-4">{item.title}</h3>
-                <p className="text-sm md:text-base leading-relaxed">{item.text}</p>
+                <p className="card-text text-sm md:text-base leading-relaxed">{item.text}</p>
               </motion.div>
             ))}
           </div>
