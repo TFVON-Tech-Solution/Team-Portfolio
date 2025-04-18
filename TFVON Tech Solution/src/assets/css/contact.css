@@ -1,10 +1,24 @@
 /* Desktop/Laptop mode */
 
- button {
-    margin-top: 2vh;
-  }
+button {
+  margin-top: 2vh;
+}
 
-/* --- Responsive for Mobile --- */ 
+.messagebox {
+  padding: 20px;
+}
+
+.message-bg {
+  padding: 20px;
+  margin-top: -5vh;
+
+}
+
+.second-smg {
+  margin-top: 10px;
+}
+
+/* --- Responsive for Mobile --- */
 @media (max-width: 1200px) {
 
   .contact-text-field {
@@ -26,7 +40,7 @@
   }
 }
 
-/* --- Responsive for Mobile --- */ 
+/* --- Responsive for Mobile --- */
 @media (max-width: 768px) {
 
 
@@ -51,7 +65,7 @@
   input {
     height: 38px;
     width: 100%;
-   
+
   }
 
   .place-text {
@@ -59,9 +73,11 @@
   }
 
   button {
-    height: 18px;
-    width: 30px;
+    height: 12px;
+    width: 25px;
     margin-top: 2vh;
+    font-size: 12px;
+    padding: 0;
   }
 
   .contact-text-field {
@@ -101,7 +117,8 @@
   }
 
   .social-links li span {
-    display: none; /* optional: hide the bullet */
+    display: none;
+    /* optional: hide the bullet */
   }
 
   .social-links a {
@@ -112,12 +129,43 @@
   .contact-form-container {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* spacing between form and social links */
+    gap: 40px;
+    /* spacing between form and social links */
   }
 
   .social-links {
     margin-top: 0 !important;
     margin-left: 0 !important;
   }
+
+  .modal-btn {
+    font-size: 14px;
+    padding: 8px 25px;
+    height: auto;
+    width: auto;
+    margin-top: 2vh;
+    display: inline-block;
+  }
+
+
+  .messagebox {
+    padding: 20px;
+  }
+
+  .message-bg {
+    padding: 20px;
+    margin-top: -7vh;
+
+  }
+
+  .primary-title {
+    font-size: 18px;
+  }
+
+  .second-smg {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
 
 }

@@ -36,7 +36,7 @@ const teamMembers = [
     github: 'https://github.com/Tihnn',
     instagram: 'https://instagram.com/princeharvey',
     facebook: 'https://facebook.com/princeharvey',
-    email: 'valentinomartin@gmail.com',
+    email: 'martinmalapo@gmail.com',
   },
   {
     name: 'Alen Fidelis',
