@@ -37,7 +37,7 @@ const Contact = () => {
     if (messageSent) {
       const timer = setTimeout(() => {
         handleModalClose();
-      }, 40000000); // 4 seconds
+      }, 4000); // 4 seconds
       return () => clearTimeout(timer);
     }
   }, [messageSent]);
