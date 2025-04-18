@@ -164,7 +164,7 @@
 
 
 
-/* --- Responsive for Mobile --- */
+/* --- Responsive for Mobile ---  768*/
 @media (max-width: 768px) {
   .team-header {
     flex-direction: column;
@@ -216,108 +216,93 @@
 }
 
 
-@media (max-width: 520px) {
+@media (max-width: 580px) {
 
   .team-card {
     color: white;
     width: 350px;
     height: 460px;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 20px #17a5bb;
-    transition: transform 0.3s ease;
-    flex-direction: row;
   }
   
-  .team-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .team-info,
-  .team-info * {
-    text-align: left;
-  }
-  
-  .team-image {
-    width: 40%;
-    object-fit: cover;
-    background: #323846;
-  }
-  
-  .team-info {
-    padding: 1rem;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+ 
   
   .team-name {
     font-size: 1.31rem;
-    font-weight: 700;
-    color: #00bcd4;
     margin: 1.8rem 0;
   }
   
   .team-role {
     font-size: 0.75rem;
-    font-weight: 600;
-    color: #ccc;
     margin-top: 1.8rem;
     margin-bottom: 1rem;
   }
   
   .team-skills {
     font-size: 0.70rem;
-    color: #bbb;
     margin-bottom: 0.7rem;
   }
   
-  .team-skills span {
-    font-weight: bold;
-    color: #fff;
-    display: block;
+  .team-skills span { 
     margin-bottom: 0.1.8rem;
   }
   
   
   .team-email {
     font-size: 0.60rem;
-    color: #fff;
   }
   
-  .team-email a {
-    /* text-decoration: underline; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
-    color: inherit;
-    padding-bottom: 2px;
-  }
   
   .team-email a:hover {
     color: #22d3ee;
   }
   
   .team-icons {
-    display: flex;
-    gap: 0.8rem;
     font-size: 1.2rem;
-    justify-content: center;
-    align-items: center;
     padding-top: 12px;
     padding-bottom: 6px;
   
   }
-  
-  .team-icons a {
+}
+
+@media (max-width: 430px) {
+
+  .team-card {
     color: white;
-    transition: all 0.3s ease;
+    width: 350px;
+    height: 400px;
   }
   
-  .team-icons a:hover {
-    color: #00e5ff;
-    transform: scale(1.2);
+ 
+  
+  .team-name {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .team-role {
+    font-size: 0.65rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-skills {
+    font-size: 0.60rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .team-skills span { 
+    margin-bottom: 0.1.7rem;
+  }
+  
+  
+  .team-email {
+    font-size: 0.55rem;
+  }
+  
+  .team-icons {
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  
   }
 }
