@@ -11,7 +11,7 @@ const images = [
   { img: alumniSystem, title: 'The Alumni Management System for CVSU-Imus tracks graduates employment and professional development through an online platform, helping improve curriculum and generate reports.' },
   { img: payrollSystem, title: 'exPense is a cloud-based payroll system that automates salary calculations, tax deductions, and bank transfers. It supports various pay structures and provides employees with ePayslips via a mobile app.' },
   { img: gvTechHRIS, title: 'GV Tech’s cloud-based HR system streamlines payroll, benefits, attendance, and employee self-service while centralizing data and providing real-time analytics for efficient and compliant HR management.' },
-  { img: hotelSystem, title: 'The Hotel Management System handles bookings, check-ins, check-outs, and room assignments for efficient hotel operations.' },
+  { img: hotelSystem, title: 'The Shangri-la Hotel Management System handles bookings, check-ins, check-outs, and room assignments for efficient hotel operations.' },
   { img: librarySystem, title: 'Libra Sphere is a system that helps libraries manage books, users, and borrowing activities efficiently.' },
   { img: barangaySystem, title: 'The Barangay System is software that helps manage local services like resident registration, permit issuance, and complaints, making operations faster and more efficient.' },
 ];

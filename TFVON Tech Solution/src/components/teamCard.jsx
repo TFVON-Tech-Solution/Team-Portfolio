@@ -11,11 +11,11 @@ const teamMembers = [
   {
     name: 'Marc Andrei Toledo',
     role: 'FRONT-END',
-    skills: ['Frameworks', 'React', 'CSS'],
+    skills: ['Frameworks', 'Figma', 'React', 'CSS', 'Javasript', 'Bootstrap',],
     image: images['../assets/team/toledo.png'].default,
     github: 'https://github.com/MarcAndrei00',
     instagram: 'https://instagram.com/princeharvey',
-    facebook: 'https://facebook.com/princeharvey',
+    facebook: 'https://www.facebook.com/marcandrei123',
     email: 'toledomarcandrei385@gmail.com',
   },
   {
@@ -25,7 +25,7 @@ const teamMembers = [
     image: images['../assets/team/omega.png'].default,
     github: 'https://github.com/Reymart18',
     instagram: 'https://instagram.com/princeharvey',
-    facebook: 'https://facebook.com/princeharvey',
+    facebook: 'https://www.facebook.com/JRFUTBOLEROS',
     email: 'omegareymart@gmail.com',
   },
   {
@@ -35,7 +35,7 @@ const teamMembers = [
     image: images['../assets/team/valentino.png'].default,
     github: 'https://github.com/Tihnn',
     instagram: 'https://instagram.com/princeharvey',
-    facebook: 'https://facebook.com/princeharvey',
+    facebook: 'https://www.facebook.com/profile.php?id=100009755924546',
     email: 'martinmalapo@gmail.com',
   },
   {
@@ -45,7 +45,7 @@ const teamMembers = [
     image: images['../assets/team/fidelis.png'].default,
     github: 'https://github.com/Yrria',
     instagram: 'https://instagram.com/princeharvey',
-    facebook: 'https://facebook.com/princeharvey',
+    facebook: 'https://www.facebook.com/lnfdls',
     email: 'fidelisalen@gmail.com',
   },
   {
@@ -55,7 +55,7 @@ const teamMembers = [
     image: images['../assets/team/nagtalon.png'].default,
     github: 'https://github.com/hrvy821',
     instagram: 'https://instagram.com/princeharvey',
-    facebook: 'https://facebook.com/princeharvey',
+    facebook: 'https://www.facebook.com/harvey.nagtalon.9',
     email: 'nagtalonprinceharvey@gmail.com',
   },
 ];
