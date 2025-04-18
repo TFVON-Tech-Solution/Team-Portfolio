@@ -68,39 +68,74 @@ const teamMembers = [
 // Team component
 const TeamCard = () => {
   return (
-    <div className="team-grid">
+    <div className="team-grid flex flex-wrap justify-center gap-16 mb-16">
       {teamMembers.map((member, index) => (
-        <div key={index} className="team-card">
-          <img src={member.image} alt={member.name} className="team-image" />
-          <div className="team-info">
+        <div key={index} className="team-card flex flex-row bg-[#323846] text-white w-[480px] h-[570px] rounded-sm overflow-hidden shadow-[0_0_20px_#17a5bb] transition-transform duration-300 ease-in-out hover:scale-105">
+          <img src={member.image} alt={member.name} className="team-image w-[40%] object-cover bg-[#323846]" />
+          <div className="team-info flex flex-col justify-between w-[60%] p-4 text-left">
             <div>
-              <h3 className="team-name">{member.name}</h3>
-              <p className="team-role">{member.role}</p>
-              <ul className="team-skills">
-                <span>Skills</span>
+              <h3 className="team-name text-[1.31rem] font-bold text-[#00bcd4] my-[1.8rem]">
+                {member.name}
+              </h3>
+              <p className="team-role text-[0.85rem] font-semibold text-[#ccc] mt-8 mb-4">
+                {member.role}
+              </p>
+              <ul className="team-skills text-[0.80rem] text-[#bbb] mb-[0.7rem]">
+                <span className="block font-bold text-white mb-[0.2rem]">Skills</span>
                 {member.skills.map((skill, idx) => (
                   <li key={idx}>• {skill}</li>
                 ))}
               </ul>
             </div>
-            <div>
 
+            <div>
               {member.number && (
-                <div className="team-email">
-                  <a href={`tel:${member.number}`}>{member.number}</a>
+                <div className="team-email text-[0.70rem] text-white">
+                  <a
+                    href={`tel:${member.number}`}
+                    className="flex items-center justify-center gap-[0.3rem] pb-[2px] hover:text-cyan-300 transition-colors"
+                  >
+                    {member.number}
+                  </a>
                 </div>
               )}
 
               {member.email && (
-                <div className="team-email">
-                  <a href={`mailto:${member.email}`}> {member.email}
+                <div className="team-email text-[0.70rem] text-white">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center justify-center gap-[0.3rem] pb-[2px] hover:text-cyan-300 transition-colors"
+                  >
+                    {member.email}
                   </a>
                 </div>
               )}
-              <div className="team-icons">
-                <a href={member.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                <a href={member.instagram} target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-                <a href={member.facebook} target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+
+              <div className="team-icons flex justify-center items-center gap-[0.8rem] text-[1.4rem] pt-[15px] pb-[8px]">
+                <a
+                  href={member.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white transition duration-300 ease-in-out hover:text-[#00e5ff] hover:scale-125"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href={member.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white transition duration-300 ease-in-out hover:text-[#00e5ff] hover:scale-125"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href={member.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white transition duration-300 ease-in-out hover:text-[#00e5ff] hover:scale-125"
+                >
+                  <FaFacebook />
+                </a>
               </div>
             </div>
           </div>
