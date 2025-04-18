@@ -163,6 +163,16 @@
 }
 
 
+/* Responsive Styling */
+@media (max-width: 1366px) {
+
+  .team-header {
+    margin-top: -28px;
+  }
+
+
+}
+
 
 /* --- Responsive for Mobile ---  768*/
 @media (max-width: 768px) {

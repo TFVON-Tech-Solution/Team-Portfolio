@@ -61,7 +61,7 @@ const Contact = () => {
 
       {/* Centered Content */}
       <div className="mt-6 flex justify-center animate-fade-in-slow">
-        <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="pager w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="contact-text-field space-y-6 animate-slide-right" style={{ marginTop: "95px" }}>
             <div className="grid grid-cols-2 gap-8">
