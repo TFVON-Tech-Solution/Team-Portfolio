@@ -21,7 +21,7 @@ const Footer = () => {
                 Phone:
               </p>
               <p className="phone text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
-                +63 095 358 4418
+                <a href="tel:+63 095 358 4418">+63 095 358 4418</a>
               </p>
             </div>
             <div className="flex gap-2">
@@ -29,7 +29,7 @@ const Footer = () => {
                 Email:
               </p>
               <p className="email text-base font-light opacity-75 hover:opacity-100 transition cursor-pointer">
-                tfvontechsolution@gmail.com
+                <a href="mailto:tfvontechsolution@gmail.com">tfvontechsolution@gmail.com</a>
               </p>
             </div>
           </div>
