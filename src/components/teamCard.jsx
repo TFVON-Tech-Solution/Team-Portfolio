@@ -11,7 +11,7 @@ const TeamCard = () => {
   const [teamMembers, setTeamMembers] = useState([
     {
       name: 'Marc Andrei Toledo',
-      role: 'FRONT-END',
+      role: 'FRONT-END DEVELOPER',
       skills: ['Frameworks', 'Figma', 'React', 'CSS', 'JavaScript', 'Bootstrap',],
       projects: ['Portfolio Website', 'E-commerce App', 'Landing Page'],
       frameworks: ['React', 'Bootstrap', 'Tailwind CSS'],
@@ -24,7 +24,7 @@ const TeamCard = () => {
     },
     {
       name: 'Reymart Omega',
-      role: 'FRONT-END',
+      role: 'FRONT-END DEVELOPER',
       skills: ['Frameworks', 'React', 'CSS'],
       projects: ['Dashboard UI', 'Blog Website'],
       frameworks: ['React', 'Material UI'],
@@ -37,7 +37,7 @@ const TeamCard = () => {
     },
     {
       name: 'Martin Louis Valentino',
-      role: 'FRONT-END',
+      role: 'FRONT-END DEVELOPER',
       skills: ['Frameworks', 'React', 'CSS'],
       projects: ['Portfolio Website', 'Landing Page'],
       frameworks: ['React', 'Tailwind CSS', 'Bootstrap'],
@@ -50,7 +50,7 @@ const TeamCard = () => {
     },
     {
       name: 'Alen Fidelis',
-      role: 'BACK-END & FRONT-END',
+      role: 'FULL STACK DEVELOPER',
       skills: ['Frameworks', 'MySQL', 'PHP', 'React JS', 'CSS', 'JavaScript'],
       projects: ['E-commerce Backend', 'API Development'],
       frameworks: ['React', 'Laravel'],
@@ -63,7 +63,7 @@ const TeamCard = () => {
     },
     {
       name: 'Prince Harvey Nagtalon',
-      role: 'FRONT-END',
+      role: 'FRONT-END DEVELOPER',
       skills: ['Frameworks', 'React', 'CSS'],
       projects: ['Portfolio Website', 'Landing Page'],
       frameworks: ['React', 'Bootstrap'],
