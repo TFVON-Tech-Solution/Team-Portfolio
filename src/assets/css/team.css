@@ -184,6 +184,10 @@
     width: 350px;
     height: 460px;
   }
+
+  .team-email {
+    font-size: 0.63rem;
+  }
 }
 
 

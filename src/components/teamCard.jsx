@@ -122,8 +122,8 @@ const TeamCard = () => {
                 </ul>
               </div>
               <div className="team-contact text-center mt-4">
-                <p className="text-[0.80rem] text-[#bbb] mb-2">{member.number}</p>
-                <p className="text-[0.80rem] text-[#bbb] mb-4">{member.email}</p>
+                <p className=" team-email text-[0.73rem] text-[#bbb] mb-2">{member.number}</p>
+                <p className="team-email text-[0.73rem] text-[#bbb] mb-4">{member.email}</p>
                 <div className="team-icons flex justify-center gap-6 mt-2">
                   <a
                     href={member.github}
