@@ -1,0 +1,115 @@
+/* General reset and layout */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Background gradient behind header */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.nav-container {
+  padding: 0 3%;
+}
+
+/* Navbar links */
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navBar a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Remove underline (no ::before at all) */
+.navBar a::before {
+  display: none;
+}
+
+/* Hover effect: only color */
+.navBar a:hover {
+  color: #22d3ee;
+}
+
+/* Active effect: bold and color only */
+.navBar a.active {
+  font-weight: bold;
+  color: #22d3ee;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navBar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, background 0.3s ease-in-out;
+    background: transparent;
+  }
+
+  .navBar.open {
+    max-height: 300px;
+    padding: 10px 0;
+    background: #212121;
+  }
+
+  .navBar.open.transparent {
+    background: rgba(33, 33, 33, 0.85);
+  }
+
+  .navBar.transparent {
+    background: rgba(33, 33, 33, 0.85);
+  }
+
+  .navBar a {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .imagelogo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .navtitle {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+}

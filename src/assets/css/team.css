@@ -1,0 +1,242 @@
+.team-section {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(to bottom right, #111827, #1e293b, #0e7490);
+}
+
+.team-header {
+  margin-right: 53px;
+}
+
+.team-title-group {
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  margin-top: 10px;
+}
+
+.team-logo {
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+
+.team-title {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+
+.team-avatar {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+
+.layered-footer {
+  margin-top: auto;
+  margin-left: -50px;
+  margin-bottom: -64px;
+}
+
+.footer-top {
+  margin-right: 90px;
+}
+
+
+
+/* TEAM CARD */
+
+.team-grid {
+  margin-bottom: 4rem;
+}
+
+
+.team-info {
+  padding: 1rem;
+}
+
+.team-name {
+  margin: 1.9rem 0;
+}
+
+.team-role {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team-skills {
+  margin-bottom: 0.7rem;
+}
+
+.team-skills span {
+  margin-bottom: 0.2rem;
+}
+
+
+.team-email a {
+  /* text-decoration: underline; */
+  padding-bottom: 2px;
+}
+
+.team-icons {
+  padding-top: 15px;
+  padding-bottom: 8px;
+
+}
+
+
+/* Responsive Styling */
+@media (max-width: 1366px) {
+
+  .team-header {
+    margin-top: -28px;
+  }
+
+
+}
+
+
+/* --- Responsive for Mobile ---  768*/
+@media (max-width: 768px) {
+  .team-header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: -4px;
+    margin-top: -40px;
+  }
+
+  .team-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: -0.8px;
+  }
+
+  .team-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .team-logo {
+    height: 120px;
+    margin-bottom: -6px;
+
+
+  }
+
+  .layered-footer {
+    width: 100%;
+    height: 80px;
+    margin-left: -50px;
+    margin-bottom: -64px;
+  }
+
+  .footer-base {
+    width: 70%;
+    height: 65px;
+  }
+
+  .footer-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+    width: 90%;
+    height: 35px;
+  }
+}
+
+
+@media (max-width: 580px) {
+
+  .team-card {
+    color: white;
+    width: 350px;
+    height: 460px;
+  }
+  
+ 
+  
+  .team-name {
+    font-size: 1.31rem;
+    margin: 1.8rem 0;
+  }
+  
+  .team-role {
+    font-size: 0.75rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-skills {
+    font-size: 0.70rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .team-skills span { 
+    margin-bottom: 0.1.8rem;
+  }
+  
+  
+  .team-email {
+    font-size: 0.60rem;
+  }
+  
+  
+  .team-email a:hover {
+    color: #22d3ee;
+  }
+  
+  .team-icons {
+    font-size: 1.2rem;
+    padding-top: 12px;
+    padding-bottom: 6px;
+  
+  }
+}
+
+@media (max-width: 430px) {
+
+  .team-card {
+    color: white;
+    width: 350px;
+    height: 400px;
+  }
+  
+ 
+  
+  .team-name {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .team-role {
+    font-size: 0.65rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-skills {
+    font-size: 0.60rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .team-skills span { 
+    margin-bottom: 0.1.7rem;
+  }
+  
+  
+  .team-email {
+    font-size: 0.55rem;
+  }
+  
+  .team-icons {
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  
+  }
+}
