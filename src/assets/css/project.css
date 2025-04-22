@@ -1,8 +1,9 @@
 /* Desktop/Laptop mode */
 
 .team-project {
-  margin-top: -5vh;
-  margin-bottom: 5vh;
+  padding-top: 6vh;
+  padding-bottom: 5vh;
+
 }
 
 .logo-sec {
