@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/css/project.css';
 import alumniSystem from '../assets/projects/alumniSystem.png';
 import payrollSystem from '../assets/projects/payrollSystem.png';
@@ -12,7 +12,6 @@ import businessDemo from '../assets/projects/demo/Business.mp4';
 import hotelDemo from '../assets/projects/demo/hotelsystem.mp4';
 import libraryDemo from '../assets/projects/demo/Library Management.mp4';
 
-// Import the logos
 import htmlLogo from '../assets/progLanguage/logo-html.png';
 import cssLogo from '../assets/progLanguage/logo-css.png';
 import jsLogo from '../assets/progLanguage/logo-javascript.png';
@@ -55,6 +54,18 @@ const images = [
 const Project = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
+  const [mobileView, setMobileView] = useState(false);
+  const [activeMobileCard, setActiveMobileCard] = useState(null); // track which card is active on mobile
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobileView(window.innerWidth <= 768);
+    };
+
+    handleResize(); // initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const openModal = (video) => {
     setActiveVideo(video);
@@ -66,10 +77,25 @@ const Project = () => {
     setActiveVideo(null);
   };
 
+  const handleCardClick = (index, video) => {
+    if (!mobileView) {
+      openModal(video); // desktop click = open modal
+      return;
+    }
+
+    if (activeMobileCard === index) {
+      openModal(video); // second tap = open video
+    } else {
+      setActiveMobileCard(index); // first tap = show details
+    }
+  };
+
   return (
     <section
       id="home"
-      style={{ background: 'linear-gradient(to bottom right,rgb(37, 37, 37),rgb(41, 41, 41))' }}
+      style={{
+        background: 'linear-gradient(to bottom right,rgb(37, 37, 37),rgb(41, 41, 41))',
+      }}
       className="text-white min-h-screen py-[100px] px-5 flex flex-col items-center justify-center"
     >
       <h1 className="team-project text-[50px] font-bold mb-10">
@@ -82,14 +108,19 @@ const Project = () => {
           <React.Fragment key={index}>
             <div
               className="flex items-center justify-center relative group w-[28rem] h-[16rem] cursor-pointer"
-              onClick={() => openModal(item.video)} // entire container is clickable
+              onClick={() => handleCardClick(index, item.video)}
             >
               <img
                 src={item.img}
                 alt={`Project ${index + 1}`}
                 className="w-full h-full object-cover rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-800 to-transparent rounded-xl flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div
+                className={`absolute inset-0 bg-gradient-to-t from-black via-gray-800 to-transparent rounded-xl flex flex-col items-center justify-center 
+                opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+                  mobileView && activeMobileCard === index ? 'opacity-100' : ''
+                }`}
+              >
                 <span className="text-white text-[15px] font-bold text-center px-4">
                   {item.title}
                 </span>
@@ -137,15 +168,13 @@ const Project = () => {
         </div>
       )}
 
-      {/* Logos Section */}
-      <div className="logo-sec flex justify-center gap-8 mt-20"> {/* Increased the margin-top to add space */}
-        <img src={htmlLogo} alt="HTML Logo" className="html w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={cssLogo} alt="CSS Logo" className="css w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={jsLogo} alt="JavaScript Logo" className="js w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={phpLogo} alt="PHP Logo" className="php w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={bootstrapLogo} alt="Bootstrap Logo" className="bootstrap w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
+      <div className="logo-sec flex justify-center gap-8 mt-20">
+        <img src={htmlLogo} alt="HTML Logo" className="html w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" />
+        <img src={cssLogo} alt="CSS Logo" className="css w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" />
+        <img src={jsLogo} alt="JavaScript Logo" className="js w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" />
+        <img src={phpLogo} alt="PHP Logo" className="php w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" />
+        <img src={bootstrapLogo} alt="Bootstrap Logo" className="bootstrap w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" />
       </div>
-
     </section>
   );
 };
