@@ -93,6 +93,8 @@
 .team-icons {
   padding-top: 15px;
   padding-bottom: 8px;
+  justify-content: center;
+  gap: 1.5rem; /* Add consistent gap between icons */
 }
 
 .team-icons a {
@@ -102,6 +104,15 @@
 .team-icons a:hover {
   transform: scale(1.2);
   color: #00e5ff;
+}
+
+.team-contact {
+  margin-top: auto;
+  text-align: center;
+}
+
+.team-contact p {
+  margin-bottom: 0.5rem;
 }
 
 
@@ -281,7 +292,7 @@
 .modal-content {
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
-  max-height: 90%;
+  max-height: 100%;
   overflow-y: auto;
 }
 

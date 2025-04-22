@@ -106,10 +106,7 @@ const Project = () => {
       <div className="project-card flex flex-wrap justify-center gap-8">
         {images.map((item, index) => (
           <React.Fragment key={index}>
-            <div
-              className="flex items-center justify-center relative group w-[28rem] h-[16rem] cursor-pointer"
-              onClick={() => handleCardClick(index, item.video)}
-            >
+            <div className="flex items-center justify-center relative group w-[28rem] h-[16rem] cursor-pointer">
               <img
                 src={item.img}
                 alt={`Project ${index + 1}`}
@@ -124,14 +121,20 @@ const Project = () => {
                 <span className="text-white text-[15px] font-bold text-center px-4">
                   {item.title}
                 </span>
-                <div className="mt-4 text-white px-4 py-2 rounded-lg text-sm">
+                <div
+                  className="mt-4 text-white px-4 py-2 rounded-lg text-sm cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent triggering the card click
+                    handleCardClick(index, item.video); // Show video only when play button is clicked
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className=" w-[2.5rem] h-[2.5rem]"
+                    className="w-[2.5rem] h-[2.5rem]"
                   >
                     <path
                       strokeLinecap="round"
