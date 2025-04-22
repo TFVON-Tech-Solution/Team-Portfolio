@@ -5,6 +5,15 @@
   margin-bottom: 5vh;
 }
 
+.logo-sec {
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+svg {
+  margin-top: 8px;
+}
+
 @media (max-width: 1200px) {
 
   .team-project {
