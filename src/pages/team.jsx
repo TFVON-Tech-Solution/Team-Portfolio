@@ -3,7 +3,6 @@ import '../assets/css/team.css';
 import logo from '../assets/logo.png';
 import TeamCard from '../components/teamCard';
 
-
 const Team = () => {
   return (
     <section className="team-section min-h-screen px-6 py-8 bg-[linear-gradient(to_bottom_right,_#111827,_#1e293b,_#0e7490)] text-white text-center flex flex-col relative">
@@ -12,17 +11,19 @@ const Team = () => {
           <h1 className="team-title text-[2.5rem] font-bold text-left ml-5 mt-[30px] m-0">
             Our Developer Team
           </h1>
-          <h4 className="team-subtitle mt-[10px] font-extralight italic text-[#c9c9c9]">
+          <h4
+            className="team-subtitle mt-[10px] font-extralight italic text-[#c9c9c9]"
+            aria-label="Team Motto"
+          >
             "Turning Coffee Into Code and Vision Into Reality"
           </h4>
         </div>
         <img
           src={logo}
-          alt="Logo"
-          className="team-logo h-[170px] pb-[10px] mb-2"
+          alt="TFVON Tech Solution Logo"
+          className="team-logo h-[170px] pb-[10px] mb-2 transition-transform duration-300 ease-in-out hover:scale-110"
         />
       </div>
-
 
       {/* TEAMCARD */}
       <TeamCard />
