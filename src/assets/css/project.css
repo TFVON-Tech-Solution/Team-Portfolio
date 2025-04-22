@@ -28,7 +28,35 @@ svg {
     padding-bottom: 15px;
   }
 
+  .logo-sec {
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+    padding-top: 1vh;
+  }
+  
+  .logo-sec img {
+    width: 4rem; /* Slightly smaller on mobile */
+    height: 4rem;
+  }
+
 }
+
+
+@media (max-width: 1000px) {
+
+  .logo-sec {
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+    padding-top: 0.8vh;
+  }
+  
+  .logo-sec img {
+    width: 4rem; /* Slightly smaller on mobile */
+    height: 4rem;
+  }
+
+}
+
 
 /* --- Responsive for Mobile --- */ 
 @media (max-width: 1366px) {
@@ -47,6 +75,7 @@ svg {
 
 }
 
+
 /* --- Responsive for Mobile --- */ 
 @media (max-width: 768px) {
 
@@ -59,6 +88,16 @@ svg {
   .project-card {
     margin: 10px;
     padding-bottom: 15px;
+  }
+
+  .logo-sec {
+    flex-wrap: wrap;
+    gap: 1rem; /* Reduce gap for smaller screens */
+  }
+
+  .logo-sec img {
+    width: 3.5rem; /* Slightly smaller on mobile */
+    height: 3.5rem;
   }
 
 }

@@ -139,11 +139,11 @@ const Project = () => {
 
       {/* Logos Section */}
       <div className="logo-sec flex justify-center gap-8 mt-20"> {/* Increased the margin-top to add space */}
-        <img src={htmlLogo} alt="HTML Logo" className="w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={cssLogo} alt="CSS Logo" className="w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={jsLogo} alt="JavaScript Logo" className="w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={phpLogo} alt="PHP Logo" className="w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
-        <img src={bootstrapLogo} alt="Bootstrap Logo" className="w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
+        <img src={htmlLogo} alt="HTML Logo" className="html w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
+        <img src={cssLogo} alt="CSS Logo" className="css w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
+        <img src={jsLogo} alt="JavaScript Logo" className="js w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
+        <img src={phpLogo} alt="PHP Logo" className="php w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
+        <img src={bootstrapLogo} alt="Bootstrap Logo" className="bootstrap w-[6rem] h-[6rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" /> {/* Responsive sizing */}
       </div>
 
     </section>
