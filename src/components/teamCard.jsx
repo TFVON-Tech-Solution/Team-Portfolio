@@ -167,7 +167,7 @@ const TeamCard = () => {
           onClick={closeModal}
         >
           <div
-            className="modal-content bg-gradient-to-br from-[#111827] via-[#1e293b] to-[#0e7490] text-white p-8 rounded-lg shadow-2xl w-[90%] max-w-[900px] relative"
+            className="modal-content bg-gradient-to-br from-[#0a192f] via-[#112240] to-[#0e7490] text-white p-8 rounded-lg shadow-2xl w-[90%] max-w-[900px] relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header Section */}
@@ -178,7 +178,7 @@ const TeamCard = () => {
                 className="w-32 h-48 object-cover rounded-md mb-4 shadow-lg"
               />
               <h2 className="text-2xl font-bold text-cyan-400">{selectedMember.name}</h2>
-              <p className="text-md font-semibold bg-[#1e293b] px-4 py-2 rounded mt-2">
+              <p className="text-md font-semibold bg-[#112240] px-4 py-2 rounded mt-2">
                 Role: {selectedMember.role}
               </p>
             </div>
@@ -190,7 +190,7 @@ const TeamCard = () => {
                 {selectedMember.skills.map((skill, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#1e293b] px-4 py-2 rounded text-white shadow-md"
+                    className="bg-[#112240] px-4 py-2 rounded text-white shadow-md"
                   >
                     {skill}
                   </div>
@@ -205,7 +205,7 @@ const TeamCard = () => {
                 {selectedMember.frameworks.map((framework, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#1e293b] px-4 py-2 rounded text-white shadow-md"
+                    className="bg-[#112240] px-4 py-2 rounded text-white shadow-md"
                   >
                     {framework}
                   </div>
@@ -220,7 +220,7 @@ const TeamCard = () => {
                 {selectedMember.projects.map((project, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#1e293b] px-4 py-2 rounded text-white shadow-md"
+                    className="bg-[#112240] px-4 py-2 rounded text-white shadow-md"
                   >
                     {project}
                   </div>
