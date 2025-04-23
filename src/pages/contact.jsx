@@ -187,12 +187,12 @@ const Contact = () => {
                 {
                   icon: "https://tse2.mm.bing.net/th/id/OIP.T5VrbJ6XosfdUtseiJrgVwHaHa?rs=1&pid=ImgDetMain",
                   name: "Facebook: tfvon",
-                  url: "https://www.facebook.com/tfvon",
+                  url: "https://www.facebook.com/profile.php?id=61575301299370",
                 },
                 {
                   icon: "https://tse4.mm.bing.net/th/id/OIP.TngkmpJ-SpaOnegeGtdedQHaHa?rs=1&pid=ImgDetMain",
                   name: "Website: tfvon.tech.solution.com",
-                  url: "https://www.tfvon.tech.solution.com",
+                  url: "https://https://tfvon-tech-solution.netlify.app/",
                 },
               ].map((link, i) => (
                 <li
