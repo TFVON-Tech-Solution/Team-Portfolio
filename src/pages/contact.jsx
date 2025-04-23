@@ -176,22 +176,22 @@ const Contact = () => {
               {[
                 {
                   icon: "https://tse3.mm.bing.net/th/id/OIP.sUyGUWZ2i7329ifXHBakXgHaHa?w=512&h=512&rs=1&pid=ImgDetMain",
-                  name: "GitHub: tfvon.tech",
+                  name: "GitHub: TFVON-Tech-Solution",
                   url: "https://github.com/TFVON-Tech-Solution/Team-Portfolio",
                 },
                 {
                   icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg",
-                  name: "Instagram: @tfvon",
-                  url: "https://www.instagram.com/tfvon",
+                  name: "Instagram: @tfvontechsolution",
+                  url: "https://www.instagram.com/tfvontechsolution/",
                 },
                 {
                   icon: "https://tse2.mm.bing.net/th/id/OIP.T5VrbJ6XosfdUtseiJrgVwHaHa?rs=1&pid=ImgDetMain",
-                  name: "Facebook: tfvon",
+                  name: "Facebook: TFVON Tech Solution",
                   url: "https://www.facebook.com/profile.php?id=61575301299370",
                 },
                 {
                   icon: "https://tse4.mm.bing.net/th/id/OIP.TngkmpJ-SpaOnegeGtdedQHaHa?rs=1&pid=ImgDetMain",
-                  name: "Website: tfvon.tech.solution.com",
+                  name: "Website: tfvon-tech-solution.netlify.app",
                   url: "https://https://tfvon-tech-solution.netlify.app/",
                 },
               ].map((link, i) => (
