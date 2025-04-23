@@ -177,7 +177,7 @@ const Contact = () => {
                 {
                   icon: "https://tse3.mm.bing.net/th/id/OIP.sUyGUWZ2i7329ifXHBakXgHaHa?w=512&h=512&rs=1&pid=ImgDetMain",
                   name: "GitHub: tfvon.tech",
-                  url: "https://www.github.com/tfvon.tech",
+                  url: "https://github.com/TFVON-Tech-Solution/Team-Portfolio",
                 },
                 {
                   icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg",
