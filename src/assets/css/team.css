@@ -184,6 +184,10 @@
     width: 350px;
     height: 460px;
   }
+
+  .team-email {
+    font-size: 0.63rem;
+  }
 }
 
 
@@ -335,4 +339,10 @@
 
 .animate-fadeOut {
   animation: fadeOut 0.3s ease-in-out;
+}
+
+@media (max-width: 420px) {
+  .team-email {
+    font-size: 0.45rem;
+  }
 }
