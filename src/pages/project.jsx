@@ -55,14 +55,14 @@ const Project = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
   const [mobileView, setMobileView] = useState(false);
-  const [activeMobileCard, setActiveMobileCard] = useState(null); // track which card is active on mobile
+  const [activeMobileCard, setActiveMobileCard] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
       setMobileView(window.innerWidth <= 768);
     };
 
-    handleResize(); // initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -79,14 +79,14 @@ const Project = () => {
 
   const handleCardClick = (index, video) => {
     if (!mobileView) {
-      openModal(video); // desktop click = open modal
+      openModal(video);
       return;
     }
 
     if (activeMobileCard === index) {
-      openModal(video); // second tap = open video
+      openModal(video);
     } else {
-      setActiveMobileCard(index); // first tap = show details
+      setActiveMobileCard(index);
     }
   };
 
@@ -106,7 +106,10 @@ const Project = () => {
       <div className="project-card flex flex-wrap justify-center gap-8">
         {images.map((item, index) => (
           <React.Fragment key={index}>
-            <div className="flex items-center justify-center relative group w-[28rem] h-[16rem] cursor-pointer">
+            <div
+              className="flex items-center justify-center relative group w-[28rem] h-[16rem] cursor-pointer select-none"
+              onClick={() => handleCardClick(index, item.video)}
+            >
               <img
                 src={item.img}
                 alt={`Project ${index + 1}`}
@@ -118,15 +121,12 @@ const Project = () => {
                   mobileView && activeMobileCard === index ? 'opacity-100' : ''
                 }`}
               >
-                <span className="text-white text-[15px] font-bold text-center px-4">
+                <span className="text-white text-[15px] font-bold text-center px-4 select-none">
                   {item.title}
                 </span>
                 <div
                   className="mt-4 text-white px-4 py-2 rounded-lg text-sm cursor-pointer"
-                  onClick={(e) => {
-                    e.stopPropagation(); // Prevent triggering the card click
-                    handleCardClick(index, item.video); // Show video only when play button is clicked
-                  }}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
