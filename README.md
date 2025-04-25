@@ -6,7 +6,7 @@
 
 ITEC 106A - WEB SYSTEM AND TECHNOLOGY 2
 
-## Features
+## Features / Structure
 
 * **Homepage**
     * Team name and logo.
