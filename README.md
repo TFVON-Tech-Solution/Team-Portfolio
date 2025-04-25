@@ -63,11 +63,11 @@ ITEC 106A - WEB SYSTEM AND TECHNOLOGY 2
 ## Authors
 
 Contributors
-* [Marc](https://github.com/MarcAndrei00)
-* [Mart](https://github.com/Reymart18)
-* [Yrria](https://github.com/Yrria)
-* [Vey](https://github.com/hrvy821)
-* [Tin](https://github.com/Tihnn)
+* [Toledo](https://github.com/MarcAndrei00)
+* [Omega](https://github.com/Reymart18)
+* [Fidelis](https://github.com/Yrria)
+* [Nagtalon](https://github.com/hrvy821)
+* [Valentino](https://github.com/Tihnn)
 
 
 ## Purpose
